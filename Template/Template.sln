@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Template\Template.csproj", "{ED4465C2-3F30-47B6-8CC4-7F7810A0DB0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolokwium2", "Kolokwium2\Kolokwium2.csproj", "{ED4465C2-3F30-47B6-8CC4-7F7810A0DB0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

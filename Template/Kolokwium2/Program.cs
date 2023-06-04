@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Template.Models;
+using Template.Services.ClientService;
+using Template.Services.Service.Abstract;
 using Template.Services.TemplateService;
-using Template.Services.TemplateService.Abstract;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<Context>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
-builder.Services.AddScoped<ITemplateService, TemplateService>();
+builder.Services.AddScoped<IClientService, ClientService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
